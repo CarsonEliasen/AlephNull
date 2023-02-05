@@ -3,6 +3,7 @@ Design thinking has been a passion of mine throughout my life, but I've found th
 
 ## Tools
 [Ideation Busters](https://carsoneliasen.github.io/DesignThinkingTools/IdeationBusters)
+[Expectation Matrix](https://carsoneliasen.github.io/DesignThinkingTools/ExpectationMatrix)
 
 ## Special Thanks
 Thank you so much to the [Richardson Design Center](https://www.chhs.colostate.edu/rdc/) at Colorado State University for fostering and encouraging my design thinking nature. Specifially:<br>
