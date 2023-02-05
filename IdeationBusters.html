@@ -1,55 +1,117 @@
+<script>
+  let prompts = [
+    "Solve for x:\n6x + 7 = 25",
+    "Stand up and spin around 3 times",
+    "Find synonyms for the word “big”",
+    "In your head, sing your least favorite song to yourself",
+    "Find as many words that end with the letter “e” as you can",
+    "How many googly eyes do you think you could stick on your face at one time?",
+    "Balance on one foot with your eyes closed",
+    "Think about how you are going to prepare dinner tonight",
+    "Rub your belly and pat your head at the same time",
+    "Name as many bugs as you can",
+    "What was the first conversation you had with your most recent friend?",
+    "Out of all of the muppets, who do you think was Jim Henson’s favorite?",
+    "Recite your ABC’s backwards",
+    "If I have 7 pennies, 3 nickels, and a dime, how many more quarters would I need to get above 2 dollars?",
+    "What is a 4 letter word for “damage”",
+    "Name as many world leaders as you can?",
+    "Put your hand on a table with the middle finger folded in, now try to lift every other finger independantly",
+    "If you were on a reality TV show, do you think the audience would like you?"
+  ];
+  let prompt = "Take a deep breath!";
+  function GeneratePrompt() {
+    let i = Math.floor(Math.random() * prompts.length);
+    document.getElementById("prompt").innerHTML = prompts[i];
+  }
+</script>
 
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+  body{
+    background-color: #00758A;
+  }
+  .container {
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    background-color: #00758A;
+  }
+  .vertical-center {
+    position: relative;
+    margin: 24px 48px 24px 48px;
+    top:50%;
+    left:50%;
+    transform: translate(-55%, +7.5%);
+  }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
+  .button {
+    border: none;
+    color: #140206;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-}
+  .button1 {
+    background-color: white;
+    color: #00758A;
+    border: 2px solid #00758A;
+  }
 
-.button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #00758A;
-}
-
-.button2:hover {
-  background-color: #00758A;
-  color: white;
-}
-
+  .button1:hover {
+    background-color: #00758A;
+    color: white;
+    border: 2px solid white;
+  }
+  h1{
+    color: white;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+    font-size: 38px;
+  }
+  p{
+    color: white;
+    font-size: 18px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+  }
 </style>
-prompt = "Prompt 1"
-function GeneratePrompt() {
-  prompt = "Prompt 2"
-}
 </head>
 <body>
-
-<center>
-<var>prompt</var>
-<n></n>
-<button class="button button2" onclick = "GeneratePrompt()">Generate</button>
-</center>
-
+  <div>
+    <center>
+      <h1>
+        Ideation Busters
+      </h1>
+      <hr width="85%"></hr>
+      <p>
+        Trying to ideate, but are getting stuck? 
+      </p>
+      <p>
+        Try taking your mind off the problem for a bit!
+      </p>
+    </center>
+  </div>
+  <div class="container">
+    <center>
+      <div class="vertical-center">
+          <p id="prompt">Take a deep breath!</p>
+      </div>
+    </center>
+    <center>
+      <div class="vertical-center">
+          <button class="button button1" onclick="GeneratePrompt()">
+            Generate
+          </button>
+      </div>
+    </center>
+  </div>
 </body>
 </html>
