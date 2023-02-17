@@ -1,0 +1,162 @@
+<script>
+  let prompts = [
+    "Solve for x:\n6x + 7 = 25",
+    "Stand up and spin around 3 times",
+    "Find synonyms for the word “big”",
+    "In your head, sing your least favorite song to yourself",
+    "Find as many words that end with the letter “e” as you can",
+    "How many googly eyes do you think you could stick on your face at one time?",
+    "Balance on one foot with your eyes closed",
+    "Think about how you are going to prepare dinner tonight",
+    "Rub your belly and pat your head at the same time",
+    "Name as many bugs as you can",
+    "What was the first conversation you had with your most recent friend?",
+    "Out of all of the muppets, who do you think was Jim Henson’s favorite?",
+    "Recite your ABC’s backwards",
+    "If I have 7 pennies, 3 nickels, and a dime, how many more quarters would I need to get above 2 dollars?",
+    "What is a 4 letter word for “damage”",
+    "Name as many world leaders as you can",
+    "Put your hand on a table with the middle finger folded in, now try to lift every other finger independantly",
+    "If you were on a reality TV show, do you think the audience would like you?",
+    "Say “Peter piper picked a peck of pickled peppers” 3 times fast"
+  ];
+  let prompt = "Take a deep breath!";
+  function GeneratePrompt() {
+    let i = Math.floor(Math.random() * prompts.length);
+    document.getElementById("prompt").innerHTML = prompts[i];
+  }
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  header{
+    text-align: left;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 34px;
+    padding: 2px;
+  }
+  body{
+    background-color: #00758A;
+  }
+  .container {
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    background-color: #00758A;
+  }
+  .vertical-center {
+    position: relative;
+    margin: 24px 24px 24px 24px;
+    top:50%;
+    left:50%;
+    transform: translate(-51%, +7.5%);
+  }
+
+  .button {
+    border: none;
+    color: #140206;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: white;
+    color: #00758A;
+    border: 2px solid #00758A;
+  }
+
+  .button1:hover {
+    background-color: #00758A;
+    color: white;
+    border: 2px solid white;
+  }
+  h1{
+    color: white;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+    font-size: 34px;
+  }
+  h2{
+    color: white;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+    font-size: 28px;
+  }
+  p{
+    color: white;
+    font-size: 14px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+  }
+  a{
+    color: #fc83b2;
+    font-size: 14px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+  }
+  footer{
+    text-align: center;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 12px;
+    padding: 5px;
+  }
+</style>
+</head>
+<header>
+  <h1>CEDTT<h1>
+</header>
+<body>
+  <div>
+    <center>
+      <h1>
+        Welcome to Carson Eliasen's Design Thinking Tools!
+      </h1>
+      <hr width="85%"></hr>
+      <p>
+        Design thinking has been a passion of mine throughout my life, 
+        but I've found that it can be hard to be a "design thinker" for some people.
+         Because of my dedication to education, 
+         I'd love to provide some assistance to those who need it. 
+         As this collection expands, I hope it will serve to propel your projects to the next level!
+      </p>
+      <hr width="85%"></hr>
+    </center>
+  </div>
+  <div>
+    <h2>Tools</h2>
+    <a href="https://carsoneliasen.github.io/DesignThinkingTools/IdeationBusters">
+      Ideation Busters
+    </a>
+    <p>
+      Want to ideate but keep getting stuck? 
+      Do an ideation buster every 1-2 minutes to help you produce innovative ideas!
+    </p>
+    <a href="https://carsoneliasen.github.io/DesignThinkingTools/ExpectationMatrix">
+      Expectation Matrix
+    </a>
+    <p>
+      Have some interview data and have no idea how to start analyzing it? 
+      Try out the expectation matrix!
+    </p>
+  </div>
+  <center><hr width="85%"></hr></center>
+  <div>
+    <h2>Special Thanks</h2>
+    <p>Thank you so much to the Richardson Design Center at Colorado State University for fostering and encouraging my design thinking nature. Specifially:</p>
+    <p>Sarah Badding, Scott Shrake, and Mark Schreiber.</p>
+    <p>All three of these people have been excellent mentors and friends to me since I've met them.</p>
+  </div>
+</body>
+<footer>
+  <a style="color:#00758A; font-size:12px;" href="https://github.com/CarsonEliasen/CarsonEliasen/blob/gh-pages/index.md">
+    More About Carson
+  </a>
+</footer>
+</html>
