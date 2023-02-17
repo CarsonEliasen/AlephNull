@@ -31,8 +31,25 @@
 <html>
 <head>
 <style>
+  header{
+    text-align: left;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 34px;
+    padding: 2px;
+  }
   body{
     background-color: #00758A;
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 12px;
+    padding: 5px;
   }
   .container {
     height: 200px;
@@ -83,8 +100,16 @@
     font-size: 18px;
     font-family: "Monaco", "Lucida Console", "Courier New";
   }
+  a{
+    color: #fc83b2;
+    font-size: 14px;
+    font-family: "Monaco", "Lucida Console", "Courier New";
+  }
 </style>
 </head>
+<header>
+  <h1>CEDTT<h1>
+</header>
 <body>
   <div>
     <center>
@@ -115,4 +140,14 @@
     </center>
   </div>
 </body>
+<footer>
+  <nav style="display: flex; justify-content: space-around;">
+    <a style="color:#00758A; font-size:12px;" href="./index.html">
+      Home
+    </a>
+    <a style="color:#00758A; font-size:12px;" href="https://github.com/CarsonEliasen/CarsonEliasen/blob/gh-pages/index.md">
+      More About Carson
+    </a>
+  </nav>
+</footer>
 </html>

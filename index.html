@@ -1,32 +1,3 @@
-<script>
-  let prompts = [
-    "Solve for x:\n6x + 7 = 25",
-    "Stand up and spin around 3 times",
-    "Find synonyms for the word “big”",
-    "In your head, sing your least favorite song to yourself",
-    "Find as many words that end with the letter “e” as you can",
-    "How many googly eyes do you think you could stick on your face at one time?",
-    "Balance on one foot with your eyes closed",
-    "Think about how you are going to prepare dinner tonight",
-    "Rub your belly and pat your head at the same time",
-    "Name as many bugs as you can",
-    "What was the first conversation you had with your most recent friend?",
-    "Out of all of the muppets, who do you think was Jim Henson’s favorite?",
-    "Recite your ABC’s backwards",
-    "If I have 7 pennies, 3 nickels, and a dime, how many more quarters would I need to get above 2 dollars?",
-    "What is a 4 letter word for “damage”",
-    "Name as many world leaders as you can",
-    "Put your hand on a table with the middle finger folded in, now try to lift every other finger independantly",
-    "If you were on a reality TV show, do you think the audience would like you?",
-    "Say “Peter piper picked a peck of pickled peppers” 3 times fast"
-  ];
-  let prompt = "Take a deep breath!";
-  function GeneratePrompt() {
-    let i = Math.floor(Math.random() * prompts.length);
-    document.getElementById("prompt").innerHTML = prompts[i];
-  }
-</script>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,6 +11,16 @@
   }
   body{
     background-color: #00758A;
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 12px;
+    padding: 5px;
   }
   .container {
     height: 200px;
@@ -100,13 +81,7 @@
     font-size: 14px;
     font-family: "Monaco", "Lucida Console", "Courier New";
   }
-  footer{
-    text-align: center;
-    background-color: #fc83b2;
-    color: #00758A;
-    font-size: 12px;
-    padding: 5px;
-  }
+  
 </style>
 </head>
 <header>
