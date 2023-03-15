@@ -37,20 +37,6 @@
     transform: translate(-51%, +7.5%);
   }
 
-  .button {
-    border: none;
-    color: #140206;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
   .button1 {
     height: 32px;
     color: #fc83b2;
@@ -62,12 +48,65 @@
     transition: ease-out 0.5s;
   }
 
-  .button1:hover {
+.button1:hover {
     color: #00758A;
     font-size: 26px;
     padding: 2px;
     cursor: pointer;
-  }
+}
+
+.slide-container {
+    position: relative;
+    height: 256px;
+    width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    height: 50%;
+    width: auto;
+    color: white;
+    font-weight: lighter;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    transition: ease-in .2s;
+    padding: 25% 1% 1.45% 1%;
+    display: table-cell;
+    vertical-align: center;
+}
+
+.prev {
+    left: -5%;
+    border-radius: 5px 0px 0px 5px
+}
+
+.next {
+    right: -5%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.prev:hover{
+    left: -6%;
+    background-color: #00758A;
+    padding: 25% 2% 1.45% 1%;
+}
+.next:hover {
+    right: -6%;
+    background-color: #00758A;
+    padding: 25% 1% 1.45% 2%;
+}
 
   h1{
     color: white;
