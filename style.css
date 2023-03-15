@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Tilt+Neon&display=swap');
+  header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 34px;
+    padding: 2px;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #fc83b2;
+    color: #00758A;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .container {
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    background-color: #00758A;
+  }
+
+  .vertical-center {
+    position: relative;
+    margin: 24px 24px 24px 24px;
+    top:50%;
+    left:50%;
+    transform: translate(-51%, +7.5%);
+  }
+
+  .button {
+    border: none;
+    color: #140206;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    height: 32px;
+    color: #fc83b2;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    font-size: 24px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    transition: ease-out 0.5s;
+  }
+
+  .button1:hover {
+    color: #00758A;
+    font-size: 26px;
+    padding: 2px;
+    cursor: pointer;
+  }
+
+  h1{
+    color: white;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    font-size: 34px;
+  }
+
+  h2{
+    color: white;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    font-size: 28px;
+  }
+
+  p{
+    color: white;
+    font-size: 16px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+  }
+  
+  a{
+    color: #fc83b2;
+    font-size: 24px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+  }
