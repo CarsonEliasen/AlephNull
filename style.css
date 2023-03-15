@@ -106,7 +106,7 @@
     user-select: none;
     -webkit-user-select: none;
     text-align: center;
-    transition: ease-in .2s;
+    transition: ease-in-out .2s;
     padding: 25% 1% 1.45% 1%;
     display: table-cell;
     vertical-align: center;
@@ -164,7 +164,7 @@
     color: hsla(0, 0%, 100%, 0.2);
     font-size: 16px;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
-    transition: ease-in .2s;
+    transition: ease-in-out .2s;
 }
 
 .p-blue,
