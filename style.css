@@ -14,9 +14,9 @@
   footer{
     position: relative;
     width: 100%;
+    height: 100px;
     bottom: 0;
     text-align: center;
-    background-color: #fc83b2;
     color: #00758A;
     font-size: 12px;
     padding: 5px;
@@ -55,6 +55,24 @@
     cursor: pointer;
 }
 
+.small-button {
+    height: 32px;
+    color: #fc83b2;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    font-size: 18px;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+    transition: ease-out 0.5s;
+  }
+
+.small-button:hover {
+    color: #00758A;
+    font-size: 19px;
+    padding: 1px;
+    cursor: pointer;
+}
+
 .slide-container {
     position: relative;
     height: 256px;
@@ -65,7 +83,13 @@
 
 .mySlides {
     display: none;
+    animation: fadeIn 1s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0.33; }
+    100% { opacity: 1; }
+  }
 
 .prev,
 .next {
@@ -99,31 +123,36 @@
 
 .prev:hover{
     left: -6%;
-    background-color: #00758A;
+    background-color: #fc83b2;
     padding: 25% 2% 1.45% 1%;
 }
 .next:hover {
     right: -6%;
-    background-color: #00758A;
+    background-color: #fc83b2;
     padding: 25% 1% 1.45% 2%;
 }
 
   h1{
+    cursor: default;
     color: white;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
     font-size: 34px;
   }
 
   h2{
-    color: white;
+    cursor: default;
+    color: #fc83b2;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
     font-size: 28px;
   }
 
   p{
+    cursor: default;
     color: white;
     font-size: 16px;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: 12.5%; 
+    margin-right: 12.5%;
   }
   
   a{
