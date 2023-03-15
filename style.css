@@ -43,7 +43,7 @@
     color: #fc83b2;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
     font-size: 24px;
-    padding: 2px;
+    padding: 10px 0px 0px 0px;
     text-align: center;
     vertical-align: middle;
     transition: ease-out 0.5s;
@@ -51,9 +51,31 @@
 
 .button1:hover {
     color: #00758A;
-    padding: 2px;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.25);
+    font-weight: bolder;
+}
+
+.button1:before {
+    transition: .66s all ease;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    right: 50%;
+    bottom: 5%;
+    opacity: 0;
+    content: "";
+    background-color: #fc83b2;
+}
+
+.button1:hover:before {
+    transition: .66s all ease;
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .small-button {
