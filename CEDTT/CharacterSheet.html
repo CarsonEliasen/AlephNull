@@ -1,103 +1,52 @@
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+</script>
+
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  header{
-    text-align: center;
-    background-color: #00758A;
-    color: #fc83b2;
-    font-size: 34px;
-    padding: 2px;
-  }
-  body{
-    background-color: #00758A;
-  }
-  footer{
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    background-color: #00758A;
-    color: #fc83b2;
-    font-size: 12px;
-    padding: 5px;
-  }
-  .container {
-    height: 200px;
-    position: relative;
-    border: 1px solid white;
-    background-color: #00758A;
-  }
-  .vertical-center {
-    position: relative;
-    margin: 24px 24px 24px 24px;
-    top:50%;
-    left:50%;
-    transform: translate(-51%, +7.5%);
-  }
-
-  .button {
-    border: none;
-    color: #140206;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "Monaco", "Lucida Console", "Courier New";
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
-  .button1 {
-    background-color: white;
-    color: #00758A;
-    border: 2px solid #00758A;
-  }
-
-  .button1:hover {
-    background-color: #00758A;
-    color: white;
-    border: 2px solid white;
-  }
-  h1{
-    color: white;
-    font-family: "Monaco", "Lucida Console", "Courier New";
-    font-size: 34px;
-  }
-  h2{
-    color: white;
-    font-family: "Monaco", "Lucida Console", "Courier New";
-    font-size: 28px;
-  }
-  p{
-    color: white;
-    font-size: 14px;
-    font-family: "Monaco", "Lucida Console", "Courier New";
-    margin: 16px 10% 16px 10%;
-  }
-  a{
-    color: #fc83b2;
-    font-size: 14px;
-    font-family: "Monaco", "Lucida Console", "Courier New";
-  }
-  
-</style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <header>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <hs>Aleph &nbsp</hs> 
+    <img src="../assets/geo_icon.png" alt="geo_icon" height="32" style="float: middle"> 
+    <hs>&nbsp Null</hs>
+  </div>
   <h1>CEDTT<h1>
 </header>
 <body>
   <div>
     <center>
-      <h1 style="font-size: 28px">
+      <h1 style="font-size: 28px; color: #fc83b2">
         Character Sheet
       </h1>
       <hr width="85%"></hr>
       <p>
         Use the character sheet to finalize your personas! <br><br>
-        1. Fill out their demographic information, including their <a href="https://www.simplypsychology.org/big-five-personality.html">Big 5 personality trait</a> graph. <br><br>
+        1. Fill out their demographic information, including their <a href="https://www.simplypsychology.org/big-five-personality.html" style="font-size: 18px;">Big 5 personality trait</a> graph. <br><br>
         2. Afterwards, dive deep into their main pain points and drivers related to the problem at hand. <br><br>
         3. Using all of that information: write down some requirements, constraints, and goals for your solution.
       </p>
@@ -107,9 +56,19 @@
   <div>
     <center>
       <br>
-      <img src = "./dt_assets/DT_character_sheet_white_t.png" style="height: 500px;">
-      <img src = "./dt_assets/DT_character_sheet_pink_t.png" style="height: 500px;">
-      <img src = "./dt_assets/DT_character_sheet_transparent.png" style="height: 500px;">
+      <div class="slide-container" style="height:500px; width: 400px">
+        <div class="mySlides" style="display: block;">
+          <img src = "./dt_assets/DT_character_sheet_pink_t.png" style="height: 500px;">
+        </div>
+        <div class="mySlides" style="background-color: #00758A; border-radius: 8px; margin: 0px 5px 0px 5px;">
+          <img src = "./dt_assets/DT_character_sheet_white_t.png" style="height: 500px;">
+        </div>
+        <div class="mySlides" style="background-color: #fc83b2; border-radius: 10px; margin: 0px 5px 0px 5px;">
+          <img src = "./dt_assets/DT_character_sheet_transparent.png" style="height: 500px;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)" style="top: 0; height: 50%; padding: 50% 1% 12.5% 1%;">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="top: 0; height: 50%; padding: 50% 1% 12.5% 1%;">&#10095;</a>
+      </div>
       <br>
     </center>
   </div>
