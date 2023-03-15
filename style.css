@@ -227,7 +227,7 @@
     transition: ease-in .2s;
     padding: 25px 7% 25px 25px;
     background-color: hsla(337, 95%, 75%, 0.25);
-    border-radius: 60px 0% 0% 0%;
+    border-radius: 100px 0% 0% 100px;
   }
 
   .p-pink3{
@@ -240,7 +240,7 @@
     transition: ease-in .2s;
     padding: 25px 7% 25px 25px;
     background-color: hsla(337, 95%, 75%, 0.25);
-    border-radius: 100px 0% 0% 100px;
+    border-radius: 60px 0% 0% 0%;
   }
 
   .p-pink:hover,
