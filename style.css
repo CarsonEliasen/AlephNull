@@ -50,9 +50,9 @@
 
 .button1:hover {
     color: #00758A;
-    font-size: 26px;
     padding: 2px;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .small-button {
@@ -68,9 +68,9 @@
 
 .small-button:hover {
     color: #00758A;
-    font-size: 19px;
     padding: 1px;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .slide-container {
@@ -151,8 +151,108 @@
     color: white;
     font-size: 16px;
     font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
-    margin-left: 12.5%; 
-    margin-right: 12.5%;
+  }
+
+  .p-blue{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: -5%; 
+    margin-right: 17.5%;
+    transition: ease-in .2s;
+    padding: 25px 25px 25px 7%;
+    background-color: hsla(189, 100%, 27%, 0.25);
+    border-radius: 0px 133px 0px 0px;
+  }
+
+  .p-blue2{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: -5%; 
+    margin-right: 17.5%;
+    transition: ease-in .2s;
+    padding: 25px 25px 25px 7%;
+    background-color: hsla(189, 100%, 27%, 0.25);
+    border-radius: 0px 100px 100px 0px;
+  }
+
+  .p-blue3{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: -5%; 
+    margin-right: 17.5%;
+    transition: ease-in .2s;
+    padding: 25px 25px 25px 7%;
+    background-color: hsla(189, 100%, 27%, 0.25);
+    border-radius: 0px 0px 90px 0px;
+  }
+
+  .p-blue:hover,
+  .p-blue2:hover,
+  .p-blue3:hover{
+    margin-left: -1%; 
+    margin-right: 13%;
+    background-color: #00758A;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    transform-origin: left;
+    transform: scale(1.1);
+  }
+
+  .p-pink{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: 17.5%; 
+    margin-right: -5%;
+    transition: ease-in .2s;
+    padding: 25px 7% 25px 25px;
+    background-color: hsla(337, 95%, 75%, 0.25);
+    border-radius: 0px 0px 0px 200px;
+  }
+
+  .p-pink2{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: 17.5%; 
+    margin-right: -5%;
+    transition: ease-in .2s;
+    padding: 25px 7% 25px 25px;
+    background-color: hsla(337, 95%, 75%, 0.25);
+    border-radius: 60px 0% 0% 0%;
+  }
+
+  .p-pink3{
+    cursor: default;
+    color: hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+    font-family: "Josefin Sans", "Monaco", "Lucida Console", "Courier New";
+    margin-left: 17.5%; 
+    margin-right: -5%;
+    transition: ease-in .2s;
+    padding: 25px 7% 25px 25px;
+    background-color: hsla(337, 95%, 75%, 0.25);
+    border-radius: 100px 0% 0% 100px;
+  }
+
+  .p-pink:hover,
+  .p-pink2:hover,
+  .p-pink3:hover{
+    margin-left: 13%; 
+    margin-right: -1%;
+    background-color: #fc83b2;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+    transform-origin: right;
+    transform: scale(1.1);
   }
   
   a{
