@@ -57,7 +57,7 @@
 }
 
 .button1:before {
-    transition: .66s all ease;
+    transition: .5s all ease;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -66,16 +66,17 @@
     opacity: 0;
     content: "";
     background-color: #fc83b2;
+    border-radius: 100px 100px 100px 100px;
 }
 
 .button1:hover:before {
-    transition: .66s all ease;
+    transition: .5s all ease;
     position: absolute;
     left: -50px;
     right: -50px;
     opacity: 1;
     z-index: -1;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .small-button {
