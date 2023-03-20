@@ -28,7 +28,20 @@
   let prompt = "Take a deep breath!";
   function GeneratePrompt() {
     let i = Math.floor(Math.random() * prompts.length);
-    document.getElementById("prompt").innerHTML = prompts[i];
+    let newPrompt = "Whoops, there was an unexpected error...";
+    if(i == 0){
+      newPrompt = GetAlgebraEq();
+    } else{
+      newPrompt = prompts[i];
+    }
+    document.getElementById("prompt").innerHTML = newPrompt;
+  }
+  function GetAlgebraEq(){
+    let m = Math.floor(Math.random() * 10 + 1);
+    let b = Math.floor(Math.random() * 15);
+    let y = Math.floor(Math.random() * 100);
+    let str = 'Solve for x:\n'.concat(m.toString(), "x + ", b, " = ", y);
+    return str;
   }
 </script>
 
