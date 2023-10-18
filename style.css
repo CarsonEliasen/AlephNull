@@ -38,6 +38,38 @@
     transform: translate(-51%, +7.5%);
   }
 
+  .thumbnail {
+    background-position: center center;
+    background-size: cover;
+    width: 25%;
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding: 5px;
+  }
+  .overlay {
+    display: flex;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-62.5%, -50%);
+    background-color: rgba(0, 0, 0, .8);
+    background-clip: content-box;
+    height: 100.5%;
+    width: 100.5%;
+    opacity: 0;
+    transition: 0.66s;
+    font-size: 36px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay:hover {
+    opacity: 1;
+  }
+
   .button1 {
     height: 32px;
     color: #fc83b2;
